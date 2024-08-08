@@ -1,0 +1,83 @@
+/* Cosmetics Page Specific Styles */
+.cosmetics-section {
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cosm-heading {
+    font-size: 1.8rem;
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cosmetics-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cosmetics-table th, .cosmetics-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.cosmetics-table th {
+    background-color: #333;
+    color: white;
+}
+
+.cosmetics-table td img {
+    max-width: 80px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.order-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.ordercosm-link {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #4CAF50;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.ordercosm-link:hover {
+    background-color: #333;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .cosmetics-section {
+        padding: 10px;
+    }
+
+    .cosm-heading {
+        font-size: 1.5rem;
+    }
+
+    .cosmetics-table th, .cosmetics-table td {
+        padding: 8px;
+    }
+
+    .cosmetics-table td img {
+        max-width: 60px;
+    }
+
+    .ordercosm-link {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}

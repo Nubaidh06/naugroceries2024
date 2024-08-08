@@ -1,0 +1,105 @@
+/* Container styling */
+.container {
+    display: flex;  /* Flexbox for layout */
+    gap: 20px;  /* Space between columns */
+    justify-content: space-between;  /* Space between columns */
+    flex-wrap: wrap;  /* Wrap columns on small screens */
+}
+
+/* Benefits section styling */
+.benefits {
+    flex: 1;  /* Grow to fill space */
+    min-width: 300px;  /* Minimum width */
+    padding: 20px;
+    background-color: #fff;  /* White background */
+    border-radius: 10px;  /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  /* Subtle shadow */
+}
+
+.benefits h2 {
+    font-size: 1.5rem;  /* Heading font size */
+    margin-bottom: 10px;  /* Space below heading */
+    color: #333;  /* Dark gray color */
+}
+
+.benefits ul {
+    list-style: disc inside;  /* Bulleted list */
+    color: #666;  /* Medium gray color */
+    padding-left: 20px;  /* Indent list */
+}
+
+.benefits ul li {
+    margin-bottom: 10px;  /* Space below items */
+}
+
+/* Registration form styling */
+.registration-form {
+    flex: 1;  /* Grow to fill space */
+    min-width: 300px;  /* Minimum width */
+    padding: 20px;
+    background-color: #fff;  /* White background */
+    border-radius: 10px;  /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  /* Subtle shadow */
+}
+
+.registration-form h2 {
+    font-size: 1.5rem;  /* Heading font size */
+    margin-bottom: 10px;  /* Space below heading */
+    color: #333;  /* Dark gray color */
+}
+
+.registration-form p {
+    font-size: 1rem;  /* Standard font size */
+    line-height: 1.5;  /* Line height for readability */
+    color: #666;  /* Medium gray color */
+    margin-bottom: 20px;  /* Space below paragraph */
+}
+
+.registration-form label {
+    display: block;  /* Block display for labels */
+    margin-bottom: 5px;  /* Space below labels */
+    color: #333;  /* Dark gray color */
+    font-weight: 500;  /* Medium bold text */
+}
+
+.registration-form input,
+.registration-form select,
+.registration-form textarea {
+    width: calc(100% - 20px);  /* Full width minus padding */
+    padding: 10px;  /* Padding inside fields */
+    margin-bottom: 20px;  /* Space below fields */
+    border: 1px solid #ddd;  /* Light gray border */
+    border-radius: 5px;  /* Rounded corners */
+    font-size: 1rem;  /* Standard font size */
+    color: #333;  /* Dark gray color */
+    background-color: #f9f9f9;  /* Light gray background */
+}
+
+.registration-form button {
+    width: 100%;  /* Full width */
+    padding: 10px;  /* Padding inside button */
+    font-size: 1rem;  /* Font size */
+    color: #fff;  /* White text */
+    background-color: #4CAF50;  /* Green background */
+    border: none;  /* No border */
+    border-radius: 5px;  /* Rounded corners */
+    cursor: pointer;  /* Pointer cursor */
+    transition: background-color 0.3s;  /* Smooth background transition */
+}
+
+.registration-form button:hover {
+    background-color: #45a049;  /* Darker green on hover */
+}
+
+/* Loyalty Level Headings */
+.benefits h3.bronze {
+    color: #cd7f32; /* Bronze color */
+}
+
+.benefits h3.silver {
+    color: #C0C0C0; /* Silver color */
+}
+
+.benefits h3.gold {
+    color: #FFD700; /* Gold color */
+}

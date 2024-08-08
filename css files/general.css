@@ -1,0 +1,198 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+/* Reset some default styles */
+* {
+    font-family: 'Poppins', sans-serif;  /* Set default font */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;  /* Smooth scrolling for anchors */
+}
+
+/* Body styles */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+.navigation {
+    display: flex;  /* Flexbox layout */
+    justify-content: space-between;  /* Space between logo and menu */
+    align-items: center;  /* Center items vertically */
+    padding: 20px;
+    background-color: #fff;  /* White background */
+    border-bottom: 1px solid #ddd;  /* Bottom border */
+}
+
+/* Logo styles */
+.logo {
+    display: flex;  /* Flexbox for logo */
+    align-items: center;  /* Center items vertically */
+    text-decoration: none;  /* Remove link underline */
+    color: #000;  /* Black text color */
+    font-size: 1.4rem;  /* Font size */
+    font-weight: 600;  /* Bold text */
+}
+
+/* Header logo image styles */
+.header-logo {
+    width: 40px;  /* Width of logo image */
+    height: auto;  /* Maintain aspect ratio */
+    margin-right: 10px;  /* Space between image and text */
+}
+
+/* Menu styles */
+.menu {
+    display: flex;  /* Flexbox for menu */
+    list-style: none;  /* Remove list bullets */
+}
+
+.menu li {
+    margin: 0 10px;  /* Space between menu items */
+}
+
+/* Menu link styles */
+.menu li a {
+    text-decoration: none;  /* Remove link underline */
+    color: green;  /* Green text color */
+    font-weight: 500;  /* Medium bold text */
+    transition: color 0.3s;  /* Smooth color transition */
+}
+
+.menu li a:hover {
+    color: darkgreen;  /* Dark green on hover */
+}
+
+/* Right navigation (cart) styles */
+.right-nav {
+    display: flex;  /* Flexbox for right navigation */
+    gap: 15px;  /* Space between items */
+}
+
+/* Right navigation links */
+.right-nav a {
+    width: 40px;  /* Width of link (icon) */
+    height: 40px;  /* Height of link (icon) */
+    display: flex;  /* Flexbox for centering icon */
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;  /* Circle shape */
+    position: relative;
+    background-color: aliceblue;  /* Background color */
+    color: inherit;  /* Inherit text color */
+}
+
+/* Cart icon color */
+.cart {
+    color: greenyellow;  /* Greenyellow color */
+}
+
+/* Notification badge on cart */
+.right-nav a span {
+    position: absolute;  /* Absolute positioning */
+    top: -7px;  /* Position above link */
+    right: -7px;  /* Position to the right */
+    width: 20px;  /* Width of badge */
+    height: 20px;  /* Height of badge */
+    display: flex;  /* Flexbox for centering text */
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;  /* Circle shape */
+    background-color: red;  /* Red background */
+    color: #fff;  /* White text */
+    font-size: 0.6rem;  /* Small font size */
+}
+
+/* Hide the menu toggle checkbox */
+#menu-toggle {
+    display: none;  /* Hide checkbox */
+}
+
+/* Menu toggle button (hamburger icon) */
+.menu-icon {
+    display: none;  /* Hide by default */
+    font-size: 1.5rem;  /* Icon size */
+    cursor: pointer;  /* Pointer cursor */
+}
+
+/* Media Queries */
+
+/* For tablets and mobile devices */
+@media (max-width: 768px) {
+    .menu {
+        display: none;  /* Hide menu by default */
+        flex-direction: column;  /* Stack menu items vertically */
+        width: 100%;  /* Full width */
+        position: absolute;  /* Absolute positioning */
+        top: 60px;  /* Below the navigation bar */
+        left: 0;
+        background-color: #fff;  /* White background */
+        border-top: 1px solid #ddd;  /* Top border */
+        z-index: 1000;  /* Bring to front */
+    }
+
+    #menu-toggle:checked + .menu-icon + .menu {
+        display: flex;  /* Show menu when checked */
+    }
+
+    .menu-icon {
+        display: block;  /* Show toggle button */
+    }
+
+    .menu li {
+        margin: 10px 0;  /* Space between items */
+    }
+
+    .right-nav {
+        display: none;  /* Hide right navigation */
+    }
+
+    .navigation {
+        padding: 10px 20px;  /* Adjust padding */
+        flex-wrap: wrap;  /* Allow wrapping */
+    }
+
+    .logo {
+        font-size: 1.2rem;  /* Adjust font size */
+    }
+}
+
+/* For small devices */
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1rem;  /* Adjust font size */
+    }
+
+    .menu-icon {
+        font-size: 1.2rem;  /* Adjust icon size */
+    }
+}
+
+/* Footer styles */
+footer {
+    background-color: #45a049;  /* Dark background */
+    color: #fff;  /* White text */
+    padding: 20px 0;  /* Vertical padding */
+    text-align: center;  /* Centered text */
+    position: relative;  /* Relative positioning */
+    width: 100%;  /* Full width */
+    margin-top: 20px;  /* Space above footer */
+}
+
+.footer-container {
+    max-width: 1070px;  /* Maximum width */
+    margin: 0 auto;  /* Center content */
+    padding: 0 20px;  /* Horizontal padding */
+}
+
+.footer-info h4 {
+    font-size: 1.5rem;  /* Heading font size */
+    margin-bottom: 10px;  /* Space below heading */
+}
+
+.footer-info p {
+    font-size: 1rem;  /* Standard font size */
+    margin: 5px 0;  /* Space above and below paragraphs */
+}

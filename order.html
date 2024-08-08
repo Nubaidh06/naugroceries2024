@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order - NAU Groceries</title>
+    <link rel="stylesheet" href="css files/general.css">
+    <link rel="stylesheet" href="css files/order.css">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navigation">
+        <a href="index.html" class="logo">
+            <img src="images/favicon.png" alt="NAU Groceries Logo" class="header-logo">
+            <span>NAU</span> Groceries
+        </a>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon"><i class="fa fa-bars"></i></label>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="dairy.html">Dairy</a></li>
+            <li><a href="vegetables.html">Vegetables</a></li>
+            <li><a href="cosmetics.html">Cosmetics and Skincare</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="registration.html">Loyalty Registration</a></li>
+        </ul>
+        <div class="right-nav">
+            <a href="order.html" class="cart"><i class="fa fa-shopping-cart"></i></a>
+        </div>
+    </nav>
+    <hr>
+    <main>
+        <div class="container order-container">
+            <div class="order-form">
+                <h2>Place Your Order</h2>
+                <div class="category-grid">
+                    <div class="product">
+                        <h3>Fruits</h3>
+                        <img src="images/fruits.jpeg" alt="Fruits" class="category-image">
+                        <select id="fruits" class="order-select">
+                            <option value="" disabled selected>Select Fruit</option>
+                            <option value="apple-150">Apple (Rs. 150/Kg)</option>
+                            <option value="banana-50">Banana (Rs. 50/Kg)</option>
+                            <option value="orange-120">Orange (Rs. 120/Kg)</option>
+                            <option value="grape-200">Grape (Rs. 200/Kg)</option>
+                            <option value="mango-100">Mango (Rs. 100/Kg)</option>
+                            <option value="strawberry-250">Strawberry (Rs. 250/Kg)</option>
+                        </select>
+                        <input type="number" id="quantity-fruits" class="order-input" placeholder="Quantity" min="1">
+                        <button type="button" id="add-to-cart-fruits" data-category="fruits" class="order-button">Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <h3>Vegetables</h3>
+                        <img src="images/vegetables.jpeg" alt="Vegetables" class="category-image">
+                        <select id="vegetables" class="order-select">
+                            <option value="" disabled selected>Select Vegetable</option>
+                            <option value="carrot-80">Carrot (Rs. 80/Kg)</option>
+                            <option value="tomato-60">Tomato (Rs. 60/Kg)</option>
+                            <option value="potato-40">Potato (Rs. 40/Kg)</option>
+                            <option value="onion-50">Onion (Rs. 50/Kg)</option>
+                            <option value="spinach-30">Spinach (Rs. 30/Kg)</option>
+                            <option value="broccoli-100">Broccoli (Rs. 100/Kg)</option>
+                        </select>
+                        <input type="number" id="quantity-vegetables" class="order-input" placeholder="Quantity" min="1">
+                        <button type="button" id="add-to-cart-vegetables" data-category="vegetables" class="order-button">Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <h3>Dairy Products</h3>
+                        <img src="images/dairy.jpeg" alt="Dairy Products" class="category-image">
+                        <select id="dairy" class="order-select">
+                            <option value="" disabled selected>Select Dairy Product</option>
+                            <option value="milk-90">Fresh Milk (Rs. 90/Litre)</option>
+                            <option value="cheese-150">Cheese (Rs. 150/Pack)</option>
+                            <option value="butter-120">Butter (Rs. 120/Pack)</option>
+                            <option value="yogurt-50">Yogurt (Rs. 50/Pack)</option>
+                            <option value="cream-130">Cream (Rs. 130/Pack)</option>
+                            <option value="ghee-200">Ghee (Rs. 200/Pack)</option>
+                        </select>
+                        <input type="number" id="quantity-dairy" class="order-input" placeholder="Quantity" min="1">
+                        <button type="button" id="add-to-cart-dairy" data-category="dairy" class="order-button">Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <h3>Meat and Seafood</h3>
+                        <img src="images/meat.jpeg" alt="Meat and Seafood" class="category-image">
+                        <select id="meat-seafood" class="order-select">
+                            <option value="" disabled selected>Select Meat or Seafood</option>
+                            <option value="chicken-200">Chicken (Rs. 200/Kg)</option>
+                            <option value="beef-300">Beef (Rs. 300/Kg)</option>
+                            <option value="fish-400">Fish (Rs. 400/Kg)</option>
+                            <option value="prawn-500">Prawn (Rs. 500/Kg)</option>
+                            <option value="mutton-600">Mutton (Rs. 600/Kg)</option>
+                            <option value="crab-700">Crab (Rs. 700/Kg)</option>
+                        </select>
+                        <input type="number" id="quantity-meat-seafood" class="order-input" placeholder="Quantity" min="1">
+                        <button type="button" id="add-to-cart-meat-seafood" data-category="meatSeafood" class="order-button">Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <h3>Baking and Cooking</h3>
+                        <img src="images/baking.webp" alt="Baking and Cooking" class="category-image">
+                        <select id="baking-cooking" class="order-select">
+                            <option value="" disabled selected>Select Baking or Cooking Product</option>
+                            <option value="flour-40">All-Purpose Flour (Rs. 40/Kg)</option>
+                            <option value="sugar-50">Granulated Sugar (Rs. 50/Kg)</option>
+                            <option value="baking-powder-30">Baking Powder (Rs. 30/Pack)</option>
+                            <option value="salt-20">Salt (Rs. 20/Kg)</option>
+                            <option value="oil-100">Cooking Oil (Rs. 100/Litre)</option>
+                            <option value="yeast-25">Yeast (Rs. 25/Pack)</option>
+                        </select>
+                        <input type="number" id="quantity-baking-cooking" class="order-input" placeholder="Quantity" min="1">
+                        <button type="button" id="add-to-cart-baking-cooking" data-category="bakingCooking" class="order-button">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="order-summary">
+                <h2>Order Summary</h2>
+                <table id="order-summary">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Quantity</th>
+                            <th>Price (Per Unit)</th>
+                            <th>Total Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Items will be added here -->
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3" style="text-align:right;"><strong>Total:</strong></td>
+                            <td id="total-price">Rs. 0.00</td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <button type="button" id="clear-cart" class="order-button">Clear Cart</button>
+                <button type="button" id="save-favourites" class="order-button">Add to Favourites</button>
+                <button type="button" id="apply-favourites" class="order-button">Apply Favourites</button>
+                <button type="button" id="place-order" class="order-button" onclick="window.location.href='order-confirmation.html';">Place Order</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <h4>Contact Us</h4>
+                <p>Address: 123 Main Street, Colombo, Sri Lanka</p>
+                <p>Phone: +94 123 456 789</p>
+                <p>Email: info@naugroceries.com</p>
+            </div>
+        </div>
+    </footer>
+    <script src="order.js"></script>
+</html>

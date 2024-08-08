@@ -1,0 +1,231 @@
+/* General styles applied to the entire body to set default font and spacing */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling for main container to control width and centering */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Basic padding styling for content within main sections */
+.main-content {
+    padding: 20px 0;
+}
+
+/* Navigation bar background, padding, and bottom border styling */
+.navigation {
+    background-color: #fff;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Styles for the logo within the navbar, setting layout and font properties */
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+/* Styling for the logo image, defining size and margin */
+.header-logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+/* Styling for the navigation menu, setting list style and display properties */
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+/* Margin styling for individual list items in the navigation menu */
+.menu li {
+    margin-left: 20px;
+}
+
+/* Anchor tag styling in the menu for font and color */
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Hiding the menu icon by default, shown in mobile view */
+.menu-icon {
+    display: none;
+}
+
+/* Right-aligned navigation elements styling */
+.right-nav {
+    margin-left: auto;
+}
+
+/* Shopping cart icon styling */
+.cart {
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+}
+
+/* Responsive styles for menu under 768px screen width */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    #menu-toggle:checked + .menu {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Styling specific to the order container within the main content area */
+.order-container {
+    padding: 20px;
+    background-color: #fff;
+}
+
+/* Margin styling for form elements in the order form */
+.order-form {
+    margin-bottom: 30px;
+}
+
+/* Header styles within the order form */
+.order-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Grid layout for product categories with gaps */
+.category-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Individual product styling, setting basis and text alignment */
+.product {
+    flex: 1 1 calc(20% - 20px);
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-sizing: border-box; /* Includes padding and border in width and height */
+}
+
+/* Styling for images representing product categories */
+.category-image {
+    width: 100%;
+    height: 135px; /* Fixed height */
+    object-fit: cover; /* Ensures the image covers the designated space without distortion */
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Styling for select elements, input fields, and buttons in the order form */
+.order-select,
+.order-input,
+.order-button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+/* Background color and text color styling for buttons */
+.order-button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Hover effect for buttons, changing background color on hover */
+.order-button:hover {
+    background-color: #218838;
+}
+
+/* Margin styling for the order summary section */
+.order-summary {
+    margin-top: 30px;
+}
+
+/* Header styling within the order summary */
+.order-summary h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Styling for the order summary table */
+#order-summary {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+/* Cell styling for the order summary table */
+#order-summary th,
+#order-summary td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Header cells background styling in the order summary table */
+#order-summary th {
+    background-color: #f4f4f4;
+}
+
+/* Styling for the total price display */
+#total-price {
+    font-weight: bold;
+}
+
+/* Footer styling, setting background color, text color, and alignment */
+footer {
+    padding: 20px 0;
+    background-color: #28a745;
+    color: #fff;
+    text-align: center;
+}
+
+/* Header and address styling in the footer */
+footer h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+footer address {
+    font-style: normal;
+}
+
+/* Responsive styling for product display in mobile views */
+@media (max-width: 768px) {
+    .category-grid {
+        flex-direction: column;
+    }
+
+    .product {
+        flex: 1 1 100%;
+    }
+}

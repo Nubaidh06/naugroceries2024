@@ -1,0 +1,140 @@
+/* ------------------------------------------------------------ */
+/* Home Page */
+/* ------------------------------------------------------------ */
+
+/* Welcome banner styles */
+#welcome-image {
+    width: 100%;  /* Full width */
+    position: relative;  /* Relative positioning */
+    overflow: hidden;  /* Hide overflow */
+    margin-top: 10px;
+    display: flex;  /* Use flexbox to center content */
+    justify-content: center;  /* Center horizontally */
+    align-items: center;  /* Center vertically */
+    background-color: #f9f9f9;  /* Fallback background color */
+}
+
+/* Background image styles */
+.bg-1 {
+    width: 66%;  /* Full width */
+    max-height: 665px;  /* Maximum height */
+    object-fit: cover;  /* Cover the entire area while maintaining aspect ratio */
+}
+
+/* Main content styling */
+.home-page {
+    max-width: 1070px;  /* Maximum width */
+    margin: 20px auto;  /* Center content with margin */
+    padding: 20px;
+    background-color: #f9f9f9;  /* Light gray background */
+    border-radius: 10px;  /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  /* Subtle shadow */
+}
+
+/* Main offer styling */
+.home-offer {
+    max-width: 1070px;  /* Maximum width */
+    margin: 20px auto;  /* Center content with margin */
+    padding: 20px;
+    background-color: #f9f9f9;  /* Light gray background */
+    border-radius: 10px;  /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  /* Subtle shadow */
+}
+
+/* Align the "What we offer" images to the left */
+.offer-image {
+    display: block;  /* Ensure the image is a block element */
+    margin-left: 0;  /* Align the image to the left */
+    margin-right: auto;  /* Ensure it does not have extra space on the right */
+}
+
+
+
+/* ------------------------------------------------------------ */
+/* Product Page */
+/* ------------------------------------------------------------ */
+
+/* Section styles for product images */
+section {
+    margin-bottom: 20px;  /* Space below sections */
+}
+
+section img {
+    width: 100%;  /* Full width */
+    max-width: 300px;  /* Maximum width */
+    height: auto;  /* Maintain aspect ratio */
+    display: block;  /* Block display */
+    margin: 0 auto 20px auto;  /* Center image and add margin below */
+    border-radius: 10px;  /* Rounded corners */
+}
+
+/* Product section styles */
+.product-container {
+    display: flex;  /* Flexbox for products */
+    flex-wrap: wrap;  /* Wrap products to next line */
+    gap: 20px;  /* Space between products */
+    justify-content: space-between;  /* Space between products */
+}
+
+.product-card {
+    background-color: #fff;  /* White background */
+    border: 1px solid #ddd;  /* Light gray border */
+    border-radius: 10px;  /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  /* Subtle shadow */
+    overflow: hidden;  /* Hide overflow */
+    text-align: center;  /* Center text */
+    width: calc(20% - 20px);  /* Width of product card */
+    min-width: 200px;  /* Minimum width */
+    flex: 1;  /* Flex-grow */
+}
+
+/* Product image styles */
+.product-card img {
+    width: 100%;  /* Full width */
+    height: auto;  /* Maintain aspect ratio */
+    border-bottom: 1px solid #ddd;  /* Bottom border */
+}
+
+/* Product info styles */
+.product-info {
+    padding: 15px;  /* Padding around info */
+}
+
+.product-info h4 {
+    font-size: 1.2rem;  /* Font size */
+    color: #333;  /* Dark gray color */
+    margin: 10px 0;  /* Space above and below */
+}
+
+.product-info p {
+    font-size: 1rem;  /* Standard font size */
+    color: #666;  /* Medium gray color */
+    margin: 5px 0;  /* Space above and below */
+}
+
+/* Add button styles */
+.product-info button {
+    background-color: green;  /* Green background */
+    color: #fff;  /* White text */
+    border: none;  /* Remove border */
+    padding: 10px 20px;  /* Padding */
+    margin-bottom: 20px;  /* Space below button */
+    cursor: pointer;  /* Pointer cursor */
+    border-radius: 4px;  /* Rounded corners */
+    font-size: 1rem;  /* Font size */
+    transition: background-color 0.3s;  /* Smooth transition */
+}
+
+.product-info button:hover {
+    background-color: darkgreen;  /* Dark green on hover */
+}
+
+.product-info button a {
+    color: #fff;  /* White text */
+    text-decoration: none;  /* Remove underline */
+}
+
+/* Today's Deals image  */
+#td-image {
+    height: 250px; 
+}

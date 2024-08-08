@@ -1,0 +1,91 @@
+/* Container styling */
+.container {
+    display: flex;  /* Use Flexbox for layout */
+    gap: 30px;  /* Space between columns */
+    justify-content: space-between;  /* Align columns with space between */
+    flex-wrap: wrap;  /* Allow columns to wrap on small screens */
+}
+
+/* Registration form styling */
+.registration-form {
+    flex: 0.65;  /* Adjust the form width to 65% of container */
+    min-width: 300px;  /* Minimum width for the form */
+    padding: 20px;
+    background-color: #fff;  /* White background for the form */
+    border-radius: 10px;  /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  /* Slight shadow for depth */
+}
+
+.registration-form h2 {
+    font-size: 1.5rem;  /* Font size for the form heading */
+    margin-bottom: 10px;  /* Space below the heading */
+    color: #333;  /* Dark gray color for the heading */
+}
+
+.registration-form input,
+.registration-form select,
+.registration-form textarea {
+    width: calc(100% - 20px);  /* Full width with padding accounted */
+    padding: 10px;  /* Padding inside form fields */
+    margin-bottom: 20px;  /* Space below each field */
+    border: 1px solid #ddd;  /* Light gray border for fields */
+    border-radius: 5px;  /* Rounded corners */
+    font-size: 1rem;  /* Standard font size */
+    color: #333;  /* Dark gray text color */
+    background-color: #f9f9f9;  /* Light gray background */
+}
+
+.registration-form button {
+    width: 100%;  /* Full width button */
+    padding: 10px;  /* Padding inside button */
+    font-size: 1rem;  /* Font size */
+    color: #fff;  /* White text */
+    background-color: #4CAF50;  /* Green background */
+    border: none;  /* No border */
+    border-radius: 5px;  /* Rounded corners */
+    cursor: pointer;  /* Pointer cursor on hover */
+    transition: background-color 0.3s;  /* Smooth background color transition */
+}
+
+.registration-form button:hover {
+    background-color: #45a049;  /* Darker green on hover */
+}
+
+/* Order Summary Section */
+.order-summary-section {
+    flex: 0.35;  /* Take remaining 35% of the container width */
+    padding: 20px;
+    background-color: #fff;  /* White background */
+    border-radius: 10px;  /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  /* Slight shadow for depth */
+}
+
+/* Order summary table styling */
+#order-summary {
+    width: 100%;  /* Full width of the section */
+    border-collapse: collapse;  /* Collapse borders for cleaner look */
+    margin-bottom: 20px;  /* Space below the table */
+}
+
+#order-summary th, 
+#order-summary td {
+    padding: 10px;  /* Padding for table cells */
+    text-align: left;  /* Align text to the left */
+    border-bottom: 1px solid #ddd;  /* Light gray border at the bottom */
+}
+
+#order-summary th {
+    background-color: #f2f2f2;  /* Light gray background for header */
+    font-weight: 600;  /* Bold font for header */
+}
+
+#order-summary td {
+    font-size: 1rem;  /* Standard font size */
+    color: #333;  /* Dark gray color for text */
+}
+
+#total-price {
+    font-weight: bold;  /* Bold font for total price */
+    font-size: 1.2rem;  /* Slightly larger font for emphasis */
+    color: #333;  /* Dark gray color */
+}
